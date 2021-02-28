@@ -1,0 +1,94 @@
+{
+  "name": "sundial",
+  "author": "mbosc",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "capabilities": [
+    "location",
+    "configurable"
+  ],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "companyName": "mbosc",
+  "pebble": {
+    "displayName": "SunDial",
+    "uuid": "b6d6f6be-f830-4c08-ae35-f35bd7e0b9c7",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "JSREADY",
+      "TIMEZONESET",
+      "TIMEZONE",
+      "DELTAUTC",
+      "SUNTIMES[18]",
+      "SHOW_MODE",
+      "CUSTOMTIME"
+    ],
+    "resources": {
+      "media": [
+        {
+          "file": "menuimg.png",
+          "menuIcon": true,
+          "name": "MENU_ICON",
+          "type": "bitmap"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BG_NITE",
+          "file": "bgnite.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BG_DAY",
+          "file": "bgday.png"
+        },
+        {
+          "characterRegex": "[ -~]",
+          "type": "font",
+          "name": "FONT_OBOE_8",
+          "file": "6px-Normal.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "characterRegex": "[ -~]",
+          "type": "font",
+          "name": "FONT_THREE_7",
+          "file": "5by3.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "characterRegex": "[ -~]",
+          "type": "font",
+          "name": "FONT_FIVE_10",
+          "file": "5by5.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "characterRegex": "[ -~]",
+          "type": "font",
+          "name": "FONT_VIC_20",
+          "file": "VictorMono-Bold.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "characterRegex": "[ -~]",
+          "type": "font",
+          "name": "FONT_VIC_30",
+          "file": "VictorMono-Bold.ttf",
+          "compatibility": "2.7"
+        }
+      ]
+    }
+  }
+}
